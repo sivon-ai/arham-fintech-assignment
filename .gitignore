@@ -1,0 +1,72 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+build/
+.vite/
+
+# Vite
+.turbo/
+.parcel-cache/
+
+# Production
+/.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.Python
+env/
+venv/
+.venv/
+build/
+dist/
+develop-eggs/
+eggs/
+parts/
+bin/
+var/
+sdist/
+*.egg-info/
+*.egg
+.pytest_cache/
+
+# IDEs
+.vscode/
+.idea/
+.project
+.classpath
+.settings/
+
+# Frontend packages
+frontend/node_modules/
+frontend/dist/
+
+# Backend venvs
+backend/.venv/
+mock-api/.venv/
+
+# Coverage
+coverage/
+htmlcov/
+
+# misc
+.DS_Store
+coverage.xml
+*.cover
+*.sqlite3
