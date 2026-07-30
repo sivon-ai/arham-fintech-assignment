@@ -1,0 +1,337 @@
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  background: #f6f7f6;
+  color: #18211d;
+}
+
+.sidebar {
+  border-right: 1px solid #d9ded9;
+  background: #ffffff;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 48px;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  display: block;
+  object-fit: contain;
+  background: transparent;
+  padding: 0;
+}
+
+.brand strong,
+.brand span {
+  display: block;
+}
+
+.brand strong {
+  font-size: 17px;
+}
+
+.brand span {
+  color: #68736d;
+  font-size: 13px;
+}
+
+nav {
+  display: grid;
+  gap: 8px;
+}
+
+button,
+select,
+input {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+nav button,
+.sync-button {
+  min-height: 40px;
+  border-radius: 6px;
+  transition:
+    background 160ms ease,
+    color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+nav button {
+  text-align: left;
+  padding: 0 12px;
+  background: transparent;
+  color: #33423a;
+}
+
+nav button:hover,
+nav button.active {
+  background: #e6eee9;
+  color: #173c2c;
+}
+
+.workspace {
+  min-width: 0;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.topbar,
+.panel-head,
+.filters,
+.status-line,
+.context-line {
+  display: flex;
+  align-items: center;
+}
+
+.topbar {
+  justify-content: space-between;
+  gap: 14px;
+  min-height: 50px;
+}
+
+.identity {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.field {
+  display: grid;
+  gap: 5px;
+}
+
+.field.inline {
+  grid-template-columns: auto minmax(150px, 220px);
+  align-items: center;
+  gap: 8px;
+}
+
+.field.compact {
+  min-width: 260px;
+}
+
+.field span {
+  color: #68736d;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+select,
+input {
+  height: 38px;
+  border: 1px solid #cad2cb;
+  border-radius: 6px;
+  padding: 0 10px;
+  background: #ffffff;
+  color: #18211d;
+  min-width: 0;
+}
+
+select:focus,
+input:focus,
+button:focus-visible {
+  outline: 2px solid #4d8067;
+  outline-offset: 2px;
+}
+
+.sync-button {
+  padding: 0 16px;
+  background: #315c48;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.sync-button:hover {
+  background: #244837;
+}
+
+.sync-button:disabled {
+  cursor: wait;
+  background: #9aaaa0;
+}
+
+.status-line {
+  min-height: 38px;
+  gap: 12px;
+  flex-wrap: wrap;
+  color: #55625b;
+  font-size: 13px;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: #b65732;
+}
+
+.dot.online {
+  background: #2e8b57;
+}
+
+.notice,
+.context-line {
+  border: 1px solid #d8bfaa;
+  background: #fff7f1;
+  color: #714327;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.context-line {
+  border-color: #ccd7cc;
+  background: #ffffff;
+  color: #435047;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #d9ded9;
+  border-radius: 8px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.panel-head {
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px;
+  border-bottom: 1px solid #e3e7e3;
+}
+
+.panel-head.stacked {
+  align-items: stretch;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 750;
+}
+
+p {
+  margin: 4px 0 0;
+  color: #68736d;
+}
+
+.filters {
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filters .field {
+  min-width: 170px;
+  flex: 1 1 170px;
+}
+
+.table-wrap {
+  width: 100%;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 820px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th,
+td {
+  padding: 11px 14px;
+  border-bottom: 1px solid #edf0ed;
+  text-align: left;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+th {
+  height: 36px;
+  color: #607067;
+  background: #fafbfa;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+td {
+  height: 42px;
+  color: #253129;
+  font-size: 14px;
+}
+
+tbody tr:hover {
+  background: #f8faf8;
+}
+
+.empty {
+  color: #7b857f;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    border-right: 0;
+    border-bottom: 1px solid #d9ded9;
+    padding: 14px;
+    gap: 14px;
+  }
+
+  nav {
+    grid-template-columns: repeat(5, minmax(104px, 1fr));
+    overflow-x: auto;
+  }
+
+  nav button {
+    text-align: center;
+  }
+
+  .workspace {
+    padding: 14px;
+  }
+
+  .topbar,
+  .panel-head {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .identity,
+  .sync-button,
+  .field.compact {
+    width: 100%;
+  }
+
+  .field.inline {
+    grid-template-columns: 1fr;
+    flex: 1 1 180px;
+  }
+}

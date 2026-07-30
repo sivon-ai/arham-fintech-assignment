@@ -1,0 +1,122 @@
+[
+    {
+        "employee_id": 1,
+        "name": "Frederick Mangat",
+        "email": "patilrachit@example.com",
+        "department": "Relationship Manager"
+    },
+    {
+        "employee_id": 2,
+        "name": "Balhaar Doshi",
+        "email": "nazarethfaras@example.org",
+        "department": "Relationship Manager"
+    },
+    {
+        "employee_id": 3,
+        "name": "Dev Hayer",
+        "email": "tgrewal@example.org",
+        "department": "Relationship Manager"
+    },
+    {
+        "employee_id": 4,
+        "name": "Yash Sachdeva",
+        "email": "gayathri17@example.com",
+        "department": "Relationship Manager"
+    },
+    {
+        "employee_id": 5,
+        "name": "Anamika Mody",
+        "email": "sridharayushman@example.com",
+        "department": "Relationship Manager"
+    },
+    {
+        "employee_id": 6,
+        "name": "Ekavir Chauhan",
+        "email": "krishna21@example.org",
+        "department": "Relationship Manager"
+    },
+    {
+        "employee_id": 7,
+        "name": "Hardik Mall",
+        "email": "bhavya26@example.org",
+        "department": "Relationship Manager"
+    },
+    {
+        "employee_id": 8,
+        "name": "Gaurav Loyal",
+        "email": "chakradhar71@example.org",
+        "department": "Relationship Manager"
+    },
+    {
+        "employee_id": 9,
+        "name": "Harini Virk",
+        "email": "qasimsaxena@example.org",
+        "department": "Relationship Manager"
+    },
+    {
+        "employee_id": 10,
+        "name": "Akshay Pandit",
+        "email": "pranit99@example.org",
+        "department": "Relationship Manager"
+    },
+    {
+        "employee_id": 11,
+        "name": "Wishi Nadig",
+        "email": "leelasundaram@example.net",
+        "department": "Relationship Manager"
+    },
+    {
+        "employee_id": 12,
+        "name": "Yug Singh",
+        "email": "pillayjonathan@example.net",
+        "department": "Relationship Manager"
+    },
+    {
+        "employee_id": 13,
+        "name": "Dakshesh Rajagopal",
+        "email": "karnikwridesh@example.org",
+        "department": "Relationship Manager"
+    },
+    {
+        "employee_id": 14,
+        "name": "Bimala Saxena",
+        "email": "valasamarth@example.net",
+        "department": "Relationship Manager"
+    },
+    {
+        "employee_id": 15,
+        "name": "Kala Mishra",
+        "email": "mammenzayyan@example.net",
+        "department": "Relationship Manager"
+    },
+    {
+        "employee_id": 16,
+        "name": "Girish Dubey",
+        "email": "thakkarjyoti@example.net",
+        "department": "Relationship Manager"
+    },
+    {
+        "employee_id": 17,
+        "name": "Raagini Sengupta",
+        "email": "chadyug@example.net",
+        "department": "Relationship Manager"
+    },
+    {
+        "employee_id": 18,
+        "name": "Bhavya Pandit",
+        "email": "patrickpathak@example.net",
+        "department": "Relationship Manager"
+    },
+    {
+        "employee_id": 19,
+        "name": "Alka Banik",
+        "email": "rpandey@example.org",
+        "department": "Relationship Manager"
+    },
+    {
+        "employee_id": 20,
+        "name": "Harshil Lad",
+        "email": "irya23@example.org",
+        "department": "Relationship Manager"
+    }
+]

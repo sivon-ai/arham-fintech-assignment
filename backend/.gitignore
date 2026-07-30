@@ -1,0 +1,46 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment / Secrets
+.env
+.env.*
+.env.local
+.env.production
+
+# SQLite database
+arham_cache.db
+*.sqlite3
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing
+.pytest_cache/
+coverage/
+htmlcov/
+
+# Logs
+*.log
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Migrations (if present)
+migrations/
+
+# Misc
+*.swp
+*.tmp
+.DS_Store
