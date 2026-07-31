@@ -54,10 +54,10 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload --port 8000
 ```
 
-Defaults work without a `.env` file:
+Defaults work with a local `.env` file. Example PostgreSQL settings:
 
 ```powershell
-$env:DATABASE_URL="sqlite:///./arham_cache.db"
+$env:DATABASE_URL="postgresql://postgres:password@localhost:5432/arham_fintech"
 $env:MOCK_API="http://127.0.0.1:9000"
 $env:BSE_REQUEST_TIMEOUT_SECONDS="25"
 $env:BSE_MAX_RETRIES="5"

@@ -3,7 +3,7 @@
 ```mermaid
 flowchart LR
   Browser[React Internal Portal] -->|fast cached reads| Backend[Internal FastAPI Backend]
-  Backend -->|SQLite by default| Cache[(Read Cache)]
+  Backend -->|PostgreSQL (default)| Cache[(Read Cache)]
   Backend -->|WebSocket sync events| Browser
   Scheduler[Background Sync Job] -->|chunked requests + retries| BSE[Mock BSE API]
   Scheduler -->|instant reliable read| Internal[Employees + Mappings Endpoint]

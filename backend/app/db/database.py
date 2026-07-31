@@ -6,10 +6,17 @@ from sqlalchemy.orm import sessionmaker
 
 load_dotenv()
 
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./arham_cache.db")
+# Require DATABASE_URL to be set explicitly to avoid accidental SQLite usage.
+DATABASE_URL = os.getenv("DATABASE_URL")
+if not DATABASE_URL:
+    raise RuntimeError(
+        "DATABASE_URL is not set. Set it in backend/.env to your PostgreSQL URL."
+    )
 
 connect_args = {}
 
+# Keep SQLite compatibility if someone intentionally uses a sqlite URL,
+# but prefer PostgreSQL in production.
 if DATABASE_URL.startswith("sqlite"):
     connect_args["check_same_thread"] = False
 
